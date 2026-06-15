@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    container_name: park_scj_web
+    ports:
+      - "8000:8000"
+    volumes:
+      # Mantém o banco de dados SQLite persistido no diretório da máquina hospedeira
+      - ./db.sqlite3:/app/db.sqlite3
+    environment:
+      # Define como False para rodar em produção (seguro e rápido)
+      - DJANGO_DEBUG=False
+    restart: always
