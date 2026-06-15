@@ -1,0 +1,272 @@
+/* Reset e Estilização Base */
+body {
+    background: linear-gradient(135deg, #0b0f19 0%, #151c2c 100%);
+    font-family: 'Inter', sans-serif;
+    color: #f3f4f6;
+    overflow-x: hidden;
+}
+
+/* Tipografias */
+.font-outfit {
+    font-family: 'Outfit', sans-serif;
+}
+
+.font-inter {
+    font-family: 'Inter', sans-serif;
+}
+
+.tracking-tight {
+    letter-spacing: -0.03em;
+}
+
+.tracking-wider {
+    letter-spacing: 0.1em;
+}
+
+/* Estilo Navbar Premium */
+.bg-premium {
+    background: rgba(11, 15, 25, 0.85) !important;
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.brand-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #10b981;
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: 0 0 10px #10b981;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+    }
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(16, 185, 129, 0);
+    }
+    100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+    }
+}
+
+.btn-config {
+    background: transparent;
+    border-color: rgba(255, 255, 255, 0.2);
+    color: #e5e7eb;
+    transition: all 0.3s ease;
+}
+
+.btn-config:hover {
+    background: #ffffff;
+    border-color: #ffffff;
+    color: #111827;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.15);
+}
+
+/* Card Principal (Glassmorphism) */
+.card-display {
+    background: rgba(26, 37, 60, 0.45);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.08) !important;
+    border-radius: 24px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-display:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4) !important;
+}
+
+.display-container {
+    position: relative;
+    display: inline-block;
+}
+
+.display-vagas {
+    font-size: 7.5rem;
+    font-weight: 800;
+    line-height: 1;
+    color: #ffffff;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.12);
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* Cores Dinâmicas Customizadas com Neon */
+.text-success-custom {
+    color: #10b981 !important;
+    text-shadow: 0 0 35px rgba(16, 185, 129, 0.35);
+}
+
+.text-warning-custom {
+    color: #f59e0b !important;
+    text-shadow: 0 0 35px rgba(245, 158, 11, 0.35);
+}
+
+.text-danger-custom {
+    color: #ef4444 !important;
+    text-shadow: 0 0 35px rgba(239, 68, 68, 0.35);
+}
+
+.text-green-value {
+    color: #10b981 !important;
+    text-shadow: 0 0 15px rgba(16, 185, 129, 0.2) !important;
+}
+
+/* Barra de Progresso */
+.progress-premium {
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.progress-bar-animated {
+    transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.bg-gradient-success {
+    background: linear-gradient(90deg, #10b981 0%, #059669 100%);
+}
+
+.bg-warning {
+    background: linear-gradient(90deg, #f59e0b 0%, #d97706 100%) !important;
+}
+
+.bg-danger {
+    background: linear-gradient(90deg, #f43f5e 0%, #e11d48 100%) !important;
+}
+
+.text-white-80 {
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+/* Botões de Ação de Vagas */
+.btn-action {
+    border-radius: 20px;
+    border: none;
+    color: #ffffff;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-action .btn-icon {
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.btn-action .btn-text {
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    font-family: 'Inter', sans-serif;
+    opacity: 0.9;
+}
+
+.btn-entrada {
+    background: linear-gradient(135deg, #10b981 0%, #047857 100%);
+    box-shadow: 0 8px 20px rgba(16, 185, 129, 0.2);
+}
+
+.btn-entrada:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 28px rgba(16, 185, 129, 0.35);
+    background: linear-gradient(135deg, #34d399 0%, #059669 100%);
+}
+
+.btn-saida {
+    background: linear-gradient(135deg, #f43f5e 0%, #be123c 100%);
+    box-shadow: 0 8px 20px rgba(244, 63, 94, 0.2);
+}
+
+.btn-saida:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 28px rgba(244, 63, 94, 0.35);
+    background: linear-gradient(135deg, #fb7185 0%, #e11d48 100%);
+}
+
+.btn-action:active:not(:disabled) {
+    transform: scale(0.96) translateY(0);
+}
+
+.btn-action:disabled {
+    background: rgba(255, 255, 255, 0.08) !important;
+    color: rgba(255, 255, 255, 0.2) !important;
+    box-shadow: none !important;
+    cursor: not-allowed;
+}
+
+/* Modais Customizados */
+.bg-card {
+    background-color: #151d30;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.form-control-premium {
+    background-color: rgba(11, 15, 25, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    border-radius: 12px;
+    padding: 12px 16px;
+    transition: all 0.3s ease;
+}
+
+.form-control-premium:focus {
+    background-color: rgba(11, 15, 25, 0.8);
+    border-color: #10b981;
+    box-shadow: 0 0 12px rgba(16, 185, 129, 0.25);
+    color: #ffffff;
+}
+
+.form-control-premium::placeholder {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.btn-premium-action {
+    background: linear-gradient(90deg, #10b981 0%, #059669 100%);
+    color: white;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-premium-action:hover {
+    background: linear-gradient(90deg, #34d399 0%, #047857 100%);
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
+}
+
+.btn-secondary {
+    background-color: rgba(255, 255, 255, 0.08);
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* Rodapé e Utilitários */
+footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+/* Toast Custom */
+.toast-container {
+    z-index: 1090;
+}
+
+.toast {
+    background-color: rgba(20, 20, 30, 0.95) !important;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
